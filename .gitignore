@@ -1,0 +1,6 @@
+UnitTestProject1/bin/
+UnitTestProject1/obj/
+YotaStat/bin/
+YotaStat/obj/
+*.suo
+YotaStat/packages/
