@@ -6,3 +6,5 @@ YotaStat/packages/
 Tests/bin/
 Tests/obj/
 Tests/packages/
+Client/bin/
+Client/obj/

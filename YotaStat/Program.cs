@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Net;
 using FluentScheduler;
@@ -12,6 +10,7 @@ namespace YotaStat
     {
         private static string _address = "http://status.yota.ru/status";
         private static string _testDb = "testdb.db";
+        private static WebClient _client = new WebClient();
 
         static void Main(string[] args)
         {
@@ -28,8 +27,7 @@ namespace YotaStat
             Data data;
             try
             {
-                var client = new WebClient();
-                var rawBytes = client.DownloadData(_address);
+                var rawBytes = _client.DownloadData(_address);
                 var rawData = Encoding.ASCII.GetString(rawBytes);
 
                 data = Parser.Parse(rawData);

@@ -16,7 +16,7 @@ namespace YotaStat
     {
         public static Data Parse(string rawData)
         {
-            var result =  new Data();
+            var result = new Data {Date = DateTime.Now};
 
             result.State = ParseString(rawData, nameof(result.State));
             result.IP = ParseString(rawData, nameof(result.IP));
