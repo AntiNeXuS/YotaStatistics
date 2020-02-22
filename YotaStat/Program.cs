@@ -8,11 +8,11 @@ namespace YotaStat
 {
     class Program
     {
-        private static string _address = "http://status.yota.ru/status";
-        private static string _testDb = "testdb.db";
-        private static WebClient _client = new WebClient();
+        private static readonly string _address = "http://status.yota.ru/status";
+        private static readonly string _testDb = "testdb.db";
+        private static readonly WebClient _client = new WebClient();
 
-        static void Main(string[] args)
+        static void Main()
         {
             var reg = new Registry();
             reg.Schedule(GetData).ToRunEvery(5).Seconds();

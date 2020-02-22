@@ -1,12 +1,10 @@
-﻿using System;
-using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using YotaStat;
 
-namespace UnitTestProject1
+namespace Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class ParserTests
     {
         private readonly string GoodInput = 
             @"State=Connected
