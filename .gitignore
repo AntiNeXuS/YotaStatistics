@@ -8,3 +8,4 @@ Tests/obj/
 Tests/packages/
 Client/bin/
 Client/obj/
+.idea/
